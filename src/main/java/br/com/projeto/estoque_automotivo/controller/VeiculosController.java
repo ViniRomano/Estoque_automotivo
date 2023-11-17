@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class VeiculosController {
 
     @GetMapping
-    public List<Veiculos> listar(){
+    public List<veiculo> listar() {
 
     }
     

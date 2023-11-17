@@ -5,9 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class EstoqueAutomotivoApplication {
+	
 
 	public static void main(String[] args) {
 		SpringApplication.run(EstoqueAutomotivoApplication.class, args);
 	}
 
-}
+}	
