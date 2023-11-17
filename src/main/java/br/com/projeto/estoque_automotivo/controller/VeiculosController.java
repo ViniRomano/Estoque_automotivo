@@ -3,6 +3,9 @@ package br.com.projeto.estoque_automotivo.controller;
 import java.util.List;
 
 import org.springframework.web.bind.annotation.RestController;
+
+import br.com.projeto.estoque_automotivo.Veiculo;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -11,7 +14,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class VeiculosController {
 
     @GetMapping
-    public List<veiculo> listar() {
+    public List<Veiculo> listar() {
+        return null;
 
     }
     
