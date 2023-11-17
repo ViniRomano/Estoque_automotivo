@@ -1,5 +1,13 @@
-# Gestão de estoque automotivo
->Status: Developing ⚠️
+<div align="center"> 
+  
+# *Gestão de estoque automotivo*
+
+</div>
+
+
+<div align="center">
+<img src="https://github.com/ViniRomano/Estoque_automotivo/assets/125411730/eeaa21b7-cafb-4a95-abb0-5802804713e8" width="400px" />
+</div>
 
 ## Desenvolvedores
 
