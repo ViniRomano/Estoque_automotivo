@@ -16,19 +16,27 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 @RestController
 @RequestMapping("/veiculos")
-public class VeiculosController {
+public class VeiculosController<VeiculoRepository> {
 
     @Autowired
-    private VeiculoRepository VeiculoRepository
+    private VeiculoRepository VeiculoRepository;
 
     @GetMapping
     public List<Veiculo> listar() {
-        return VeiculoRepository.findall();
+        return ((Object) VeiculoRepository).findall();
     }
     
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Veiculo adicionar (@RequestBody Veiculo veiculo){
-        return VeiculoRepository.save(veiculo);
+        return ((Object) VeiculoRepository).save(veiculo);
+    }
+
+    public VeiculoRepository getVeiculoRepository() {
+        return VeiculoRepository;
+    }
+
+    public void setVeiculoRepository(VeiculoRepository veiculoRepository) {
+        VeiculoRepository = veiculoRepository;
     }
 }
