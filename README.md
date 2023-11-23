@@ -45,6 +45,22 @@ O sistema de gestão de estoque automotivo foi realizado na disciplina de Progra
 
 **Justificativa:** O H2 Database foi escolhido para ambientes de desenvolvimento e teste devido à sua natureza incorporada e facilidade de configuração. Ideal para fases iniciais do projeto, o H2 Database oferece flexibilidade e agilidade.
 
+## *TECNOLOGIA EMPREGADA*
+
+Essa arquitetura segue o padrão MVC, dividindo responsabilidades entre o modelo, a visão e o controlador, proporcionando uma estrutura organizada e escalável para um sistema de gestão de estoque automotivo.
+
+- **Model (Modelo):**
+
+No contexto do sistema de gestão de estoque automotivo, as classes do modelo representam os carros em estoque. Cada instância dessas classes contém informações como modelo, marca e ano do carro. As operações de CRUD (criar, ler, atualizar e excluir) são realizadas nesta camada.
+
+- **View (Visão):**
+
+A camada de visão, embora ainda não implementada, seria responsável por apresentar os dados ao usuário. No caso de um sistema de gestão de estoque automotivo, isso poderia envolver interfaces do usuário para listar carros, exibir detalhes de um carro específico, adicionar novos carros e assim por diante.
+
+- **Controller (Controlador):**
+
+O controlador é a peça central que gerencia as requisições HTTP e orquestra as interações entre o modelo e a visão. Para a gestão de estoque automotivo, o controlador receberia solicitações para listar todos os carros, consultar detalhes de um carro específico, adicionar um novo carro, atualizar informações de um carro existente e excluir um carro.
+
 ## *INOVAÇÃO E CRIATIVADE*
 
 - Essa combinação de tecnologias empregadas no sistema visa estabelecer uma gestão de estoque automotivo que harmoniza a confiabilidade do Java, a eficiência do Spring Boot e a flexibilidade inicial do H2 Database, adaptando-se às diferentes necessidades do ciclo de desenvolvimento do projeto.
@@ -69,7 +85,7 @@ O sistema de gestão de estoque automotivo foi realizado na disciplina de Progra
 **Adicionar Novo Carro:**
 - Método: POST
 - URL: http://localhost:8080/carros
-- Corpo (Body):
+- Corpo:
   ```json
   { "modelo": "Modelo do Carro", "marca": "Marca do Carro", "ano": 2022 }
 
@@ -82,7 +98,7 @@ O sistema de gestão de estoque automotivo foi realizado na disciplina de Progra
 - Método: PUT
 - URL: http://localhost:8080/carros/{id}
 - Parâmetros de Caminho: {id} - ID do carro a ser atualizado.
-- Corpo (Body):
+- Corpo:
   ```json
   { "modelo": "Modelo do carro", "marca": "Marca do carro", "ano": 2023 };
 
